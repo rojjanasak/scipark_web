@@ -51,12 +51,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
 
 	<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-	<style>
-		#ที่ปรึกษา {
-			display: none;
-		}
 
-		#Freelance {
+	<style>
+		#จัดตั้งแล้ว {
 			display: none;
 		}
 
@@ -70,7 +67,6 @@
 			text-align: left;
 			background-color: #fff;
 		}
-
 		.style-switch-wrapper #preset3 {
 			background-color: #81c83c;
 		}
@@ -82,7 +78,7 @@
 		.parallax {
 			background-size: cover !important;
 			background-repeat: no-repeat;
-			background-position: 100% 0;
+			background-position: 50% 0;
 			background-attachment: fixed !important;
 			padding: 50px 0;
 			color: #fff;
@@ -159,11 +155,11 @@
 			<!-- Subpage title start -->
 			<div class="banner-title-content">
 				<div class="text-center">
-					<h2>ลงทะเบียนผู้เชี่ยวชาญ</h2>
+					<h2>ลงทะเบียนเข้าร่วมรับบริการ</h2>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb justify-content-center">
 							<li class="breadcrumb-item"><a href="index.html">หน้าแรก</a></li>
-							<li class="breadcrumb-item text-white" aria-current="page">ลงทะเบียนผู้เชี่ยวชาญ</li>
+							<li class="breadcrumb-item text-white" aria-current="page">ลงทะเบียนเข้าร่วมรับบริการ</li>
 						</ol>
 					</nav>
 				</div>
@@ -181,72 +177,11 @@
 							<div class="col-md-12 heading">
 								<span class="title-icon classic float-left"><i class="fa fa-comments"></i></span>
 								<h2 class="title classic">
-									ลงทะเบียนผู้เชี่ยวชาญ</h2>
+								ลงทะเบียนเข้าร่วมรับบริการ</h2>
 							</div>
 						</div>
 						<br>
-
-						<div class="row">
-							<div class="col-md-12 col-sm-12">
-								<h4>ข้อมูล Supply</h4>
-								<div class="radio">
-									<label style="font-size: 20px;"><input type="radio" id="optradio" name="optradio"
-											value="ที่ปรึกษา" onchange="showHide(this)"> ที่ปรึกษา / นักวิจัย </label>
-								</div>
-
-								<div class="row" id="ที่ปรึกษา">
-									<div class="col-md-12">
-										<div class="radio" style="padding-left: 20px;">
-											<label><input type="radio" name="f1" value="ห้างหุ้นส่วนจำกัด">
-												อาหาร และเครื่องดื่ม </label><br>
-											<label><input type="radio" name="f1" value="ห้างหุ้นส่วนสามัญ">
-												เครื่องสำอาง </label><br>
-											<label><input type="radio" name="f1" value="บริษัทจำกัด">
-												ผลิตภัณฑ์ทางการเกษตร
-											</label><br>
-											<label><input type="radio" name="f1" value="บริษัทจำกัดมหาชน">
-												ซอฟท์แวร์ แอพพลิเคชั่น</label><br>
-											<label><input type="radio" name="f1" value="สหกรณ์"> การออกแบบ
-												ตกแต่ง</label><br>
-											<label><input type="radio" name="f1" value="วิสาหกิจชุมชน"> แผนธุรกิจ
-												การตลาด
-											</label><br>
-											<label><input type="radio" name="f1" value="วิสาหกิจชุมชน"> เครื่องมือ
-												เครื่องจักร
-											</label><br>
-											<label><input type="radio" name="f1" value="อื่นๆ"> อื่นๆ ระบุ <input
-													type="text" class="form-control-inline" id="phone_in"
-													autocomplete="off"></label>
-										</div>
-									</div>
-								</div>
-
-								<div class="radio">
-									<label style="font-size: 20px;"><input type="radio" id="optradio" name="optradio"
-											value="Freelance" onchange="showHide(this)"> Freelance</label>
-								</div>
-								<div class="row" id="Freelance">
-									<div class="col-md-12">
-										<div class="radio" style="padding-left: 20px;">
-											<label><input type="radio" name="g1" value="ออกแบบ">
-												ออกแบบ </label><br>
-											<label><input type="radio" name="g1" value="ห้างหุ้นส่วนสามัญ">
-												ถ่ายรูป ถ่ายVDO </label><br>
-											<label><input type="radio" name="g1" value="บริษัทจำกัด">
-												แผนธุรกิจ
-											</label><br>
-											<label><input type="radio" name="g1" value="บริษัทจำกัดมหาชน">
-												เว็บไซต์ แอพพลิเคชั่น</label><br>
-											<label><input type="radio" name="g1" value="อื่นๆ"> อื่นๆ ระบุ <input
-													type="text" class="form-control-inline" id="phone_in"
-													autocomplete="off"></label>
-										</div>
-									</div>
-								</div>
-								<hr>
-							</div><!-- End col-md-12 -->
-						</div>
-						<h3>ข้อมูลทั่วไป</h3><br>
+						<h3 style="text-decoration: underline;">ข้อมูลส่วนบุคคล</h3>
 						<div class="row">
 							<div class="col-md-4 col-sm-4">
 								<div class="form-group">
@@ -274,34 +209,29 @@
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="form-group">
-									<label for="exampleInputEmail1">บริษัท/หย่วยงาน *</label>
+									<label for="exampleInputEmail1">วัน/เดือน/ปีเกิด*</label>
 									<input type="text" class="form-control" id="phone_in" autocomplete="off">
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="form-group">
-									<label for="exampleInputEmail1">ภาควิชา / แผนก *</label>
+									<label for="exampleInputEmail1">อายุ *</label>
 									<input type="text" class="form-control" id="phone_in" autocomplete="off">
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="form-group">
-									<label for="exampleInputEmail1">ตำแหน่งงาน *</label>
+									<label for="exampleInputEmail1">เบอร์โทรศัพท์ *</label>
 									<input type="text" class="form-control" id="phone_in" autocomplete="off">
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-4">
+							<div class="col-md-12 col-sm-12">
 								<div class="form-group">
-									<label for="exampleInputEmail1">ตำแหน่งวิชาการ *</label>
+									<label for="exampleInputEmail1">ที่อยู่ *</label>
 									<input type="text" class="form-control" id="phone_in" autocomplete="off">
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-4">
-								<div class="form-group">
-									<label for="exampleInputEmail1">เบอร์โทร *</label>
-									<input type="text" class="form-control" id="phone_in" autocomplete="off">
-								</div>
-							</div>
+
 							<div class="col-md-4 col-sm-4">
 								<div class="form-group">
 									<label for="exampleInputEmail1">Email *</label>
@@ -310,66 +240,146 @@
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="form-group">
-									<label for="exampleInputEmail1">Line</label>
+									<label for="exampleInputEmail1">Facebook</label>
 									<input type="text" class="form-control" id="phone_in" autocomplete="off">
 								</div>
 							</div>
-
+							<div class="col-md-4 col-sm-4">
+								<div class="form-group">
+									<label for="exampleInputEmail1">Line ID</label>
+									<input type="text" class="form-control" id="phone_in" autocomplete="off">
+								</div>
+							</div>
 						</div><!-- Content row  end -->
 						<hr>
 
-						<h3>การศึกษา / ความเชี่ยวชาญ</h3>
+						<h3 style="text-decoration: underline;">ข้อมูลเกี่ยวกับธุรกิจ</h3>
+						<br>
 						<div class="row">
 							<div class="col-md-12 col-sm-12">
-								<div class="form-group">
-									<label for="exampleInputEmail1">วุฒิการศึกษา</label>
-									<input type="text" class="form-control" id="wf" autocomplete="off">
+								<h4>ท่านจัดตั้งหรือดำเนินธุรกิจแล้วหรือไม่</h4>
+								<div class="radio">
+									<label style="font-size: 20px;"><input type="radio" id="optradio" name="optradio"
+											value="จัดตั้งแล้ว" onchange="showHide(this)"> จัดตั้งแล้ว </label>
 								</div>
-							</div>
+
+								<div class="row" id="จัดตั้งแล้ว">
+									<div class="col-md-12">
+										<div class="radio" style="padding-left: 20px;">
+											<label><input type="radio" name="f1" value="ห้างหุ้นส่วนจำกัด">
+												ห้างหุ้นส่วนจำกัด </label><br>
+											<label><input type="radio" name="f1" value="ห้างหุ้นส่วนสามัญ">
+												ห้างหุ้นส่วนสามัญ </label><br>
+											<label><input type="radio" name="f1" value="บริษัทจำกัด"> บริษัทจำกัด
+											</label><br>
+											<label><input type="radio" name="f1" value="บริษัทจำกัดมหาชน">
+												บริษัทจำกัดมหาชน </label><br>
+											<label><input type="radio" name="f1" value="สหกรณ์"> สหกรณ์ </label><br>
+											<label><input type="radio" name="f1" value="วิสาหกิจชุมชน"> วิสาหกิจชุมชน
+											</label><br>
+											<label><input type="radio" name="f1" value="อื่นๆ"> อื่นๆ ระบุ <input
+													type="text" class="form-control-inline" id="phone_in"
+													autocomplete="off"></label>
+										</div>
+									</div>
+								</div>
+
+								<div class="radio">
+									<label style="font-size: 20px;"><input type="radio" id="optradio" name="optradio"
+											value="ยังไม่จัดตั้ง" onchange="showHide(this)"> ยังไม่จัดตั้ง</label>
+								</div>
+								<hr>
+							</div><!-- End col-md-12 -->
+
+
+							<br>
 							<div class="col-md-12 col-sm-12">
-								<div class="form-group">
-									<label for="exampleInputEmail1">สาขาที่สำเร็จการศึกษา</label>
-									<input type="text" class="form-control" id="wf" autocomplete="off">
+								<h4 style="text-decoration: underline;">ประเภทของธุรกิจ</h4>
+								<div class="form-check" style="padding-left: 40px;">
+									<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">อาหาร และเครื่องดื่ม</label>
 								</div>
-							</div>
-							<div class="col-md-12 col-sm-12">
-								<div class="form-group">
-									<label for="exampleInputEmail1">สถาบันที่สำเร็จการศึกษา</label>
-									<input type="text" class="form-control" id="wf" autocomplete="off">
+								<div class="form-check" style="padding-left: 40px;">
+									<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">เครื่องสำอาง</label>
 								</div>
-							</div>
-							<div class="col-md-12 col-sm-12">
-								<div class="form-group">
-									<label for="exampleInputEmail1">ความเชี่ยวชาญเฉพาะด้าน</label>
-									<textarea class="form-control" rows="3" id="comment"
-										placeholder="ตัวอย่างเช่น : industrial product design, medical products"></textarea>
+								<div class="form-check" style="padding-left: 40px;">
+									<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">ผลิตภัณฑ์ทางการเกษตร </label>
 								</div>
-							</div>
+								<div class="form-check" style="padding-left: 40px;">
+									<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">ซอฟท์แวร์ แอพพลิเคชั่น </label>
+								</div>
+								<div class="form-check" style="padding-left: 40px;">
+									<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">เครื่องประดับ</label>
+								</div>
+								<div class="form-check" style="padding-left: 40px;">
+									<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">เฟอร์นิเจอร์
+										ของตกแต่งบ้าน</label>
+								</div>
+								<div class="form-check" style="padding-left: 40px;">
+									<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">อื่นๆ ระบุ </label>
+									<input type="text" class="form-control-inline" id="phone_in" autocomplete="off">
+								</div>
+								<hr>
+							</div><!-- End col-md-12 -->
 
 						</div><!-- Content row  end -->
 
-						<h3>ประสบการณ์ / ผลงาน</h3>
 						<div class="row">
-							<div class="col-md-4 col-sm-4">
+							<div class="col-md-8 col-sm-8">
 								<div class="form-group">
-									<label for="exampleInputEmail1">ประสบการณ์การให้คำปรึกษา (ปี)</label>
+									<label for="exampleInputEmail1">ผลิตภัณฑ์</label>
 									<input type="text" class="form-control" id="phone_in" autocomplete="off">
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<label for="exampleInputEmail1">แนบไฟล์รูปภาพ</label>
+								<input type="file" name="fileToUpload" id="fileToUpload">
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<label for="exampleInputEmail1">ตลาดกลุ่มเป้าหมาย </label>
+									<input type="text" class="form-control" id="phone_in" autocomplete="off">
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<label for="exampleInputEmail1">ราคาขาย</label>
+									<input type="number" class="form-control" id="phone_in" autocomplete="off">
 								</div>
 							</div>
 							<div class="col-md-8 col-sm-8">
 								<div class="form-group">
-									<label for="exampleInputEmail1">ผลงาน / ประสบการณ์ที่ผ่านมา</label>
+									<label for="exampleInputEmail1">แผนธุรกิจ </label>
 									<input type="text" class="form-control" id="phone_in" autocomplete="off">
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<label for="exampleInputEmail1">แนบไฟล์ (ถ้ามี)</label>
+								<input type="file" name="fileToUpload" id="fileToUpload">
+							</div>
+
+						</div><!-- Content row  end -->
+						<hr>
+						<div class="row">
+							<div class="col-md-8 col-sm-8">
+								<div class="form-group">
+									<label for="exampleInputEmail1">*** รหัสประจำตัวผู้สมัครเข้าร่วมรับบริการ (กรุณาจำรหัสไว้)</label>
+									<input type="text" class="form-control" id="phone_in" autocomplete="off"
+										value="<?php echo("2563-" . rand(1,10000)); ?>">
 								</div>
 							</div>
 
 						</div><!-- Content row  end -->
 
-						<h3>อัพโหลดรูปประจำตัว</h3>
-						เลือกไฟล์รูป <input type="file" name="upload" />
 						<hr>
 						<button type="submit" id="submit"
-							class="btn btn-outline-success">ยืนยันลงทะเบียนผู้เชี่ยวชาญ</button>
+							class="btn btn-outline-success">ยืนยันสมัครเข้าร่วมรับบริการ</button>
 					</div>
 					<!--/ container end -->
 				</section>
@@ -411,8 +421,12 @@
 				</div>
 			</div>
 			<!--/ Container end -->
-		</section>
-		<!--/ Copyright end -->
+		</section>n class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
+	</div>
+	</div>
+	<!--/ Container end -->
+	</section>
+	<!--/ Copyright end -->
 
 	</div><!-- Body inner end -->
 
@@ -450,26 +464,15 @@
 	<script src="js/script.js"></script>
 
 </body>
-<script type="text/javascript">
-
-	var input = $('#start_time');
-	input.clockpicker({
-		autoclose: true
-	});
-	var input2 = $('#end_time');
-	input2.clockpicker({
-		autoclose: true
-	});
-</script>
 <script>
 	function showHide(elem) {
 		//console.log(elem.value);
-		if (elem.value == 'ที่ปรึกษา') {
-			document.getElementById('ที่ปรึกษา').style.display = 'flex';
-			document.getElementById('Freelance').style.display = 'none';
-		} else if (elem.value == 'Freelance') {
-			document.getElementById('ที่ปรึกษา').style.display = 'none';
-			document.getElementById('Freelance').style.display = 'flex';
+		if (elem.value == 'จัดตั้งแล้ว') {
+			document.getElementById('จัดตั้งแล้ว').style.display = 'flex';
+			document.getElementById('ยังไม่จัดตั้ง').style.display = 'none';
+		} else if (elem.value == 'ยังไม่จัดตั้ง') {
+			document.getElementById('จัดตั้งแล้ว').style.display = 'none';
+			document.getElementById('ยังไม่จัดตั้ง').style.display = 'none';
 		}
 	}
 </script>
