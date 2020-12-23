@@ -368,6 +368,9 @@
 						<h3>อัพโหลดรูปประจำตัว</h3>
 						เลือกไฟล์รูป <input type="file" name="upload" />
 						<hr>
+						<input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" (change)="onFileSelected($event)">
+<button type="button" (click)="onUpload()">Upload File</button>
+<hr>
 						<button type="submit" id="submit"
 							class="btn btn-outline-success">ยืนยันลงทะเบียนผู้เชี่ยวชาญ</button>
 					</div>
